@@ -13,6 +13,7 @@ paperheight=25cm,
 paperwidth=21cm, 
 top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
 
+% Ecuación mamona de fondo a elección
 \backgroundsetup{
   scale=4,
   angle=0,
@@ -23,8 +24,6 @@ top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
   vshift=0.7cm,
   contents={%
 \(\displaystyle \rho_{t} + (\rho v)_{x} = 0\)\hspace{6mm}
-%\(\displaystyle (\rho v)_{t} + (\rho v^{2} + p)_{x} = 0\)\hspace{6mm}
-%\(\displaystyle (\rho E)_{t} + [v(\rho E + p)]_{x} = 0\)
   }
 }
 
@@ -32,8 +31,8 @@ top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
 \begin{document}
 \pagestyle{empty}
 
-\def \downleft{current page.south west}
 
+% Margen alrededor de la hoja. Si cambian los márgenes del documento se desajusta. TODO: automatizar el margen.
 \AddToShipoutPicture{%
   \begin{tikzpicture}[remember picture, overlay]
     \draw[line width=1pt] (1cm,1cm) rectangle (20cm,24cm);
@@ -41,17 +40,17 @@ top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
 }
 
 \begin{center}
+	% Logo escuela/facultad
 	\includegraphics[width=0.55\textwidth]{1.png}\hfill
+	% Logo USAC/otra U
     \includegraphics[width=0.28\textwidth]{usaclogo.png}
-    
 
     \vspace{1cm}
 
-    %\textbf{\LARGE Acto de Graduación}
     {\large El estudiante}
 
     \vspace{1cm}
-
+	% NOMBRE DEL GRADUANDO
     \textbf{\Large Rodrigo Rafael Castillo Chong}
 
     \vspace{1cm}
@@ -59,21 +58,22 @@ top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
     {tiene el honor de invitarle al solemne acto de graduación y examen público previo a serle conferido el título de}
 
     \vspace{1cm}
-
+	% TÍTULO UNIVERSITARIO A ADQUIRIR
     \textbf{\Large Licenciado en Física Aplicada}
 
     \vspace{1cm}
-
+	% LOCALIDAD O DATOS ADICIONALES
     {\large que tendrá lugar en el \textbf{Auditorio Francisco Vela} de la facultad de Ingeniería, en la }
 
     \vspace{1cm}
+    % NOMBRE UNIVERSIDAD
     {\Large \textbf{Universidad de San Carlos de Guatemala}}
     \vspace{1cm}
-
+	% FECHA Y HORA
     \textbf{\large [Miércoles 13 de marzo] \hspace{0.5cm} [3:00pm]}
 
     \vspace{1cm}
-
+	% RECEPCIÓN U OTROS DATOS
     \textbf{\large [Recepción: Vesuvio Majadas, 4:30pm]}
 
 \end{center}
