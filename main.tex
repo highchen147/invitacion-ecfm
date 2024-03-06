@@ -1,0 +1,81 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{background}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{tikz}
+
+% Ajusta los márgenes según tus preferencias
+\geometry{
+paperheight=25cm,
+paperwidth=21cm, 
+top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\backgroundsetup{
+  scale=4,
+  angle=0,
+  color=black,
+  opacity=0.12,
+  position=current page.south,
+  hshift = -0.5cm,
+  vshift=0.7cm,
+  contents={%
+\(\displaystyle \rho_{t} + (\rho v)_{x} = 0\)\hspace{6mm}
+%\(\displaystyle (\rho v)_{t} + (\rho v^{2} + p)_{x} = 0\)\hspace{6mm}
+%\(\displaystyle (\rho E)_{t} + [v(\rho E + p)]_{x} = 0\)
+  }
+}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\def \downleft{current page.south west}
+
+\AddToShipoutPicture{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[line width=1pt] (1cm,1cm) rectangle (20cm,24cm);
+  \end{tikzpicture}
+}
+
+\begin{center}
+	\includegraphics[width=0.55\textwidth]{1.png}\hfill
+    \includegraphics[width=0.28\textwidth]{usaclogo.png}
+    
+
+    \vspace{1cm}
+
+    %\textbf{\LARGE Acto de Graduación}
+    {\large El estudiante}
+
+    \vspace{1cm}
+
+    \textbf{\Large Rodrigo Rafael Castillo Chong}
+
+    \vspace{1cm}
+\large
+    {tiene el honor de invitarle al solemne acto de graduación y examen público previo a serle conferido el título de}
+
+    \vspace{1cm}
+
+    \textbf{\Large Licenciado en Física Aplicada}
+
+    \vspace{1cm}
+
+    {\large que tendrá lugar en el \textbf{Auditorio Francisco Vela} de la facultad de Ingeniería, en la }
+
+    \vspace{1cm}
+    {\Large \textbf{Universidad de San Carlos de Guatemala}}
+    \vspace{1cm}
+
+    \textbf{\large [Miércoles 13 de marzo] \hspace{0.5cm} [3:00pm]}
+
+    \vspace{1cm}
+
+    \textbf{\large [Recepción: Vesuvio Majadas, 4:30pm]}
+
+\end{center}
+
+\end{document}
